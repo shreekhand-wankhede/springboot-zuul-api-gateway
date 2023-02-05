@@ -1,0 +1,11 @@
+server:
+  port: 8100
+zuul:
+  routes:
+    microservice-service2:
+      url: http://localhost:8095
+    microservice-service1:
+      url: http://localhost:8096
+spring:
+  main:
+    web-application-type: reactive
